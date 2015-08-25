@@ -31,9 +31,9 @@ The following additional key-mappings will be automatically available whenever
 NERDTree is activated:
 
  Key | Action
------+-------
-  l  | When a directory is selected, expand it and highlight the first child. When a file is selected, open it for editing.
-  h  | Collapses a directory if its expanded. Moves up one level in the hierarchy.
+:---:|:------
+  l  | Expand a directory and highlight its first child, or open a file for editing.
+  h  | Collapses an expanded directory, or moves up one level in the hierarchy.
 
 
 ## License
