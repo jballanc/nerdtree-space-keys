@@ -41,8 +41,10 @@ call NERDTreeAddKeyMap({ 'key':           'h',
 function! s:descendTree(dirnode)
     call a:dirnode.open()
     call b:NERDTree.render()
-    let chld = a:dirnode.getChildByIndex(0, 0)
-    call chld.putCursorHere(0, 0)
+    if a:dirnode.getChildCount() > 0
+        let chld = a:dirnode.getChildByIndex(0, 1)
+        call chld.putCursorHere(0, 0)
+    end
 endfunction
 
 function! s:openFile(filenode)
@@ -59,7 +61,10 @@ function! s:closeOrAscendTree(dirnode)
 endfunction
 
 function! s:ascendTree(node)
-    call a:node.parent.putCursorHere(0, 0)
+    let parent = a:node.parent
+    if parent != {}
+        call parent.putCursorHere(0, 0)
+    end
 endfunction
 
 
