@@ -1,5 +1,7 @@
 # NERDTree Space Keys
 
+[![Project Status: Suspended – Initial development has started, but there has not yet been a stable, usable release; work has been stopped for the time being but the author(s) intend on resuming work.](http://www.repostatus.org/badges/latest/suspended.svg)](http://www.repostatus.org/#suspended)
+
 This is a collection of keyboard shortcuts inspired by the keyboard navigation
 for [NeoTree](https://github.com/jaypei/emacs-neotree) in
 [Spacemacs](https://github.com/syl20bnr/spacemacs).
